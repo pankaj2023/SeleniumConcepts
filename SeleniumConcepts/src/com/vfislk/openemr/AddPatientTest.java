@@ -22,11 +22,12 @@ public class AddPatientTest {
 		driver.findElement(By.id("authUser")).sendKeys("admin");
 		driver.findElement(By.id("clearPass")).sendKeys("pass");
 		
-		Select selectLanguage=new Select(driver.findElement(By.name("languageChoice")));
+		Select selectLanguage = new Select(driver.findElement(By.name("languageChoice")));
 		selectLanguage.selectByVisibleText("English (Indian)");
 		
 		driver.findElement(By.xpath("//button[@type='submit']")).click();
 	
+		
 		
 //		driver.findElement(By.xpath("//div[text()='Patient/Client']")).click();
 		
